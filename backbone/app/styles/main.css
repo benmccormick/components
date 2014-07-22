@@ -1,0 +1,136 @@
+body {
+    background:#C9C9C9;
+    font-family: 'Helvetica Neue Light', Helvetica;
+    font-size:16px;
+    line-height:20px;
+}
+.container {
+    width: 600px;
+    background: #fafafa;
+    display:block;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    min-height:600px;
+    
+
+}
+
+.header {
+    width:100%;
+    height:40px;
+    border-bottom:2px solid black;
+    display:block;
+    clear:both;
+
+}
+
+.header h1 {
+    float:left;
+    line-height:40px;
+    margin: 0;
+    font-size:30px;
+}
+
+.header:after {
+    clear:both;
+}
+
+#count {
+    float:right;
+    font-size:30px;
+
+}
+
+#addpost {
+    width:100%;
+    height:60px;
+}
+
+#newpost {
+    box-sizing:border-box;
+    width: 500px;
+    margin: 20px 50px;
+    display:inline-block;
+    float:left;
+    clear:both;
+    padding-left:5px;
+    padding-right:55px;
+    height:30px;
+    font-size:18px;
+    line-height:26px;
+    font-family:'Source Code Pro','Monaco',fixed-width
+}
+.charsleft {
+    display:inline-block;
+    margin-left: -95px;
+    margin-top: 25px;
+    height:30px;
+    font-size:18px;
+    line-height:26px;
+    font-family:'Source Code Pro','Monaco',fixed-width
+}
+
+.charsleft.ok {
+    color:#999;
+}
+.charsleft.warning {
+    color:#ffd37f;
+}
+.charsleft.full {
+    color:#f58e8e;
+}
+
+.charsleft.error {
+    color:#ff2e2e;
+}
+
+
+#addpost:after,#addpost:before {
+    clear:both;
+}
+
+#postlist {
+    display:block;
+    float:none;
+
+}
+
+.posts {
+    list-style-type:none;
+    display:block;
+    margin:0;
+    padding:0;
+}
+
+.posts .post {
+    position:relative;
+    height: 60px;
+    background: #a9d2ab;
+    color: #F9f9f9;
+    display:block;
+    margin: 10px 25px;
+    width:550px;
+
+}
+
+.posts .post .message{
+   position:absolute;
+   left:5px;
+   top: 20px;
+}
+
+.posts .post .time {
+    position: absolute;
+    right:40px;
+    top:20px;
+}
+.posts .post .delete {
+    position: absolute;
+    right:0px;
+    top:2px;
+    display:block;
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
